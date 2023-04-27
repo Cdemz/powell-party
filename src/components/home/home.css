@@ -1,0 +1,119 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 2rem;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  box-shadow: 2px 2px 4px 0 var(--color-primary-variant);
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  z-index: 100;
+}
+header nav a {
+  display: inline-block;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  display: none;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__socials ul li {
+  display: inline-block;
+}
+.logo {
+  display: block;
+}
+
+.logo img {
+  height: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background-color: black;
+    height: 100px;
+  }
+
+  header nav {
+    font-size: 12px;
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo img {
+    height: 4rem;
+    left: 2rem;
+  }
+  header {
+    padding: 0 1rem;
+    background-color: black;
+    flex-direction: row;
+  }
+
+  header .nav-btn {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    height: 62vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--color-bg);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}

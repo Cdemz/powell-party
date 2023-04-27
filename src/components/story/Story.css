@@ -1,0 +1,16 @@
+.story__content {
+  background-color: var(--color-primary);
+  padding: 10px 35px;
+  text-align: center;
+}
+.story__content h1 {
+  color: var(--color-bg-variant);
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .story__content h1 {
+    font-size: 0.8em;
+  }
+}
