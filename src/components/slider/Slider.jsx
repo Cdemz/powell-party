@@ -4,9 +4,12 @@ import IMG1 from '../../images/slider1.jpeg'
 import IMG2 from '../../images/slider2.jpeg'
 import IMG3 from '../../images/slider3.jpeg'
 import IMG4 from '../../images/slider4.jpeg'
+import {useState} from 'react'
 
 
 const Slider = () => {
+    
+    const [activeNav, setActiveNav] = useState ('#')
     var counter = 1;
     setInterval(() => {
         document.getElementById('radio' + counter).checked = true;
@@ -29,7 +32,7 @@ const Slider = () => {
                 <img src={IMG1} alt="" />
                 <div className='text__box'>
                     <div className='dtext'><h2> Austin's most amazing</h2></div>
-                    <div className='dtext__btn'><button className='text__btn btn' onclick="location.href='#about'">ABOUT US</button></div>
+                    <div className='dtext__btn'> <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><button className='text__btn btn' >ABOUT US</button></a></div>
                 </div>
             </div>
             <div class="slide ">

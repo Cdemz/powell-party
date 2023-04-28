@@ -1,0 +1,62 @@
+.footer_bar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 30px 15px;
+}
+
+.footer_content {
+  padding: 10px;
+  justify-content: center;
+}
+
+.footer_content h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: #ea8100;
+}
+
+.footer_content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  margin-right: 2px;
+  color: var(--color-bg-variant);
+}
+
+@media only screen and (max-width: 830px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_content h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer_bar {
+    flex-direction: column;
+  }
+
+  .footer_content {
+    text-align: center;
+  }
+
+  .socials {
+    padding: 15px 80px;
+  }
+
+  .hours {
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,54 @@
+.thought {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.thought h2 {
+  color: var(--color-primary);
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3em;
+}
+
+.customers h6 {
+  font-size: 1em;
+}
+
+.customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ct__btn {
+  color: var(--color-white);
+  background: var(--color-primary);
+  font-family: "Luckiest Guy", cursive;
+  padding: 20px 15%;
+}
+
+@media only screen and (max-width: 830px) {
+  .thought h2 {
+    color: var(--color-primary);
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2em;
+  }
+  .customers h6 {
+    font-size: 0.7em;
+  }
+
+  .ct__btn {
+    padding: 20px 12%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+  .ct__btn {
+    padding: 10px 12%;
+  }
+}
