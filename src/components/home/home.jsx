@@ -20,25 +20,30 @@ function Navbar() {
     
 
 	return (
-		<header>
+		<body>
+		<header id="home" className="header">
+			
+			<div className="header__content">
+
+			
 			<div className="logo">
 				<img src={logo1} alt="" />
 			</div>
 
 			<nav ref={navRef} className="box">
-				<a href="/#">Home</a>
-				<a href="/#">About Us</a>
-				<a href="/#">Services</a>
-				<a href="/#">Media</a>
-				<a href="/#">Photo Booth</a>
-				<a href="/#">Store</a>
-				<a href="/#">Contact</a>
+				<a href="/#" onClick={showNavbar}>Home</a>
+				<a href="#about" onClick={showNavbar}>About Us</a>
+				<a href="/#" onClick={showNavbar}>Services</a>
+				<a href="/#" onClick={showNavbar}>Media</a>
+				<a href="/#" onClick={showNavbar}>Photo Booth</a>
+				<a href="/#" onClick={showNavbar}>Store</a>
+				<a href="/#" onClick={showNavbar}>Contact</a>
 
                 <div className="header__socials"> 
                         <ul>
-                            <li><a href="/#"> <FaTwitter /> </a></li>
-                            <li><a href="/#"><BsInstagram /></a></li>
-                            <li><a href="/#"><FaFacebookF /></a></li>
+                            <li><a href="https://twitter.com/powell_party" > <FaTwitter /> </a></li>
+                            <li><a href="https://www.instagram.com/powell_party"><BsInstagram /></a></li>
+                            <li><a href="https://www.facebook.com/powellparty"><FaFacebookF /></a></li>
                         </ul>
                     </div>
 				<button
@@ -53,7 +58,10 @@ function Navbar() {
 				onClick={showNavbar}>
 				<FaBars />
 			</button>
+
+			</div>
 		</header>
+		</body>
 	);
 }
 

@@ -7,6 +7,7 @@ import About from './components/about us/About.jsx';
 import Thought from './components/thought/Thought.jsx';
 import Award from './components/awards/Award.jsx';
 import Review from './components/review/Reveiw.jsx';
+import Promo from './components/promo/Promo.jsx';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
       <Thought/>
       <Award/>
       <Review/>
-     
       <Footer />
+      <Promo />
       
     </>
   );

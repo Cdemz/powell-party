@@ -1,0 +1,19 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding: 20px 15%;
+  gap: 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+.stand img {
+  width: 10rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}

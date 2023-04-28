@@ -5,6 +5,7 @@
   flex-direction: row;
   gap: 2rem;
   padding: 30px 15px;
+  border-bottom: 2px solid var(--color-primary);
 }
 
 .footer_content {
